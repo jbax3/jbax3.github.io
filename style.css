@@ -26,18 +26,6 @@ table {
   border-collapse: collapse;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #333e;
-  color: #fff;
-  padding: 0.2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 #lock {
   height: 1.5rem;
   fill: #111;
@@ -49,6 +37,18 @@ table {
 
 #lock:hover {
   fill: #313;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #333e;
+  color: #fff;
+  padding: 0.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-link {
@@ -139,13 +139,13 @@ table {
 }
 
 .article p {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: #222;
 }
 
 .article .tags {
   all: unset;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: RGB(20,20,100);
 }
 
