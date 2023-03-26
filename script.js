@@ -116,11 +116,6 @@ fetch('./content.json')
           `;
 
           articleElement.addEventListener('click', () => {
-            const lock = document.getElementById("lock");
-            console.log(lock.src)
-            if (lock.src.split("/").pop() === "lock.svg") {
-              decodeContent()
-            };
             articleElement.classList.add('selected');
             grid.classList.add('selected');
             grid.innerHTML = `
