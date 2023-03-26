@@ -116,6 +116,14 @@ fetch('./content.json')
           `;
 
           articleElement.addEventListener('click', () => {
+
+            // # Allows any article click to unlock -- removed for further scraping prevention
+            // const lock = document.getElementById("lock");
+            // console.log(lock.src)
+            // if (lock.src.split("/").pop() === "lock.svg") {
+            //   decodeContent()
+            // };
+            
             articleElement.classList.add('selected');
             grid.classList.add('selected');
             grid.innerHTML = `
