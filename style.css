@@ -212,6 +212,14 @@ table {
   }
 }
 
+@media only screen and (max-width: 428px) and (-webkit-device-pixel-ratio: 3) and (device-width: 428px) and (device-height: 926px) {
+  /* Styles for iPhone 13 Pro Max */
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 40%;
+  }
+}
+
 /*@media only screen and (orientation: portrait) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
