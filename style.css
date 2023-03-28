@@ -48,6 +48,7 @@ table {
   padding: 0.2rem;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -174,7 +175,7 @@ table {
   font-size: 1.8rem;
 }
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
   .grid-wrapper {
     max-width: 100%;
   }
@@ -210,13 +211,61 @@ table {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 40%;
   }
+}*/
+
+@media only screen and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles for iPhone 13 Pro Max */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 20%;
+  }
+
+  .article p,.article .tags {
+    font-size: 2vw;
+  }
+
+  .article h1 {
+    font-size: 2.5vw;
+  }
+
+  #lock {
+    height: 5rem;
+  }
+
+  .navbar-link {
+    font-size: 2vw;
+  }
+
+  .navbar {
+    overflow-x: scroll;
+  }
 }
 
-@media only screen and (max-width: 428px) and (-webkit-device-pixel-ratio: 3) and (device-width: 428px) and (device-height: 926px) {
+@media only screen and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles for iPhone 13 Pro Max */
   .grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 40%;
+    grid-auto-rows: 10%;
+  }
+
+  .article p,.article .tags {
+    font-size: 5vw;
+  }
+
+  .article h1 {
+    font-size: 6vw;
+  }
+
+  #lock {
+    height: 5rem;
+  }
+
+  .navbar-link {
+    font-size: 5vw;
+  }
+
+  .navbar {
+    overflow-x: scroll;
   }
 }
 
